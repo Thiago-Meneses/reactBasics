@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='us'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>React Basics</title>
+
+        <!-- Personal CSS -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://thiago-meneses.github.io/spacing.css">
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bd-container">
+            <aside>
+                <div class="sidebar-container">
+                    <details class="navbar mt-5">
+                        <summary>Content</summary>
+                        <ul class="navbar-ul noBullet px-3">
+                            <li class="mx-1 py-1"><a href="#declarative">Declarative</a></li>
+                            <li class="mx-1 py-1"><a href="#components">Components</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </aside>
+            <main class='main-container'>
+                <div class='main-content'>
+                    <header class="content-header">
+                        <h1 class="headline title-frame my-5">React - Starter Guide</h1><br>
+                        <p>React is a <span class="blue-backdrop">JavaScript Library</span> for building User Interfaces</p>
+                        <p class="mt-3">React makes building user interfaces incredibly easy and intuitive</p>
+                        <p class="mt-3">We will begin by explaining some important features of React:</p>
+                    </header>
+                    <div class='content'>
+                        <div class='frame-line'>
+                            <h1 class='headline' id="declarative"><span class="backdrop">Declarative</span></h1>
+                            <p class="mt-3">React is what we call a Declarative Library</p>
+                            <p class="mt-3">But what do we really mean when we say React is Declarative?</p>
+                            <p class="mt-3">Normally when we want to change elements in JavaScript we write a bunch of code to select the specific element we want to modify</p>
+                            <ul>
+                                <li>For example, we could make HTML change the innerText of some element after the user clicks a button with the '.onclick' event</li>
+                                <li>We could also make some message appear after the pages has loaded using the '.onload' event</li>
+                                <li>The list of situations where we can use events is endless.</li>
+                                <li>All of these elements are being changed with the use of events, React will instead change them in a declaratively way.</li>
+                            </ul>
+                            <p class="mt-3">So what is this "declarative way"? Explain Further...</p>
+                            <p>The HTML will know how to <b>change itself</b> accordingly to the specific value we give it</p>
+                            <p>This is what we mean by being declarative</p>
+
+                            <p class="mt-4">This implies that we we dont need to change the HTML code directly.</p>
+		                    <p>This makes your code predictable and easier to debug</p>
+                        </div>
+                        <div class="frame-line">
+                            <h1 class='headline' id="components"><span class="backdrop">React <span class="blue-backdrop">Components</span></span></h1>
+                            <p class="mt-5">React has a feature that we call <span class="blue-backdrop">Components</span></p>
+                            <p class="mt-4">Components are the <b>Most Important</b> part of react</p>
+                            <div class="chapter">
+                                <h2 class='chapter-title'><span class='backdrop'>React: It's Component-Based</span></h2>
+                                <p class="mt-3">When we say React is Component-Based, what we actually mean is that instead of building only one giant JavaScript file, which stores a considerable amount of code, we are actually going to build smaller JavaScript files which stores less code overall and which represent only individual parts of our page.</p>
+                                <p class="mt-3">These smaller elements will be chained together to build up our entire webpage.</p>
+                                <p class="mt-3">This feature makes things easier to manage, before bringing them all together to make more complex UI</p>
+                                <p class="mt-5">React changes the mindset of how you're supposed to think about programs</p>
+                                <p class="mt-3">React makes us think less about the workflow and more about being <b>component-based</b> and <b>state-based</b></p>
+                                <p class="mt-5">Components don't have to be big</p>
+                                <p class="mt-3">The same Component can have different appearences in different situations, even if it's the same component, the reason being that this component may have some other components inside of it.</p>
+                                <p>example: google react page</p>
+                            </div>
+                            <div class="chapter mt-5">
+                                <h2 class='chapter-title'><span class='backdrop'>React: Benefits</span></h2>
+                                <p class="mt-3">React is a library that allows us not only to write our HTML but that also allows us to do HTML interact in the way that want with our state</p>
+                                <p class="mt-5">React allows us to manage the state inside of our application</p>
+                                <p class="mt-3">React also allows us to manage the state and rendering of the user interface and user interaction in the website</p>                                
+                                <p class="mt-5">It allows you to automatically re-render your application, everytime you state changes</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
